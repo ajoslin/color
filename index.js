@@ -170,6 +170,9 @@ Color.prototype = {
 	hwbString: function () {
 		return string.hwbString(this.values.hwb, this.values.alpha);
 	},
+	toString: function () {
+		return this.rgbaString();
+	},
 	keyword: function () {
 		return string.keyword(this.values.rgb, this.values.alpha);
 	},
